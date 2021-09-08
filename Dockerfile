@@ -18,7 +18,7 @@ RUN apk del ansible && \
     pip3 install --no-cache-dir --upgrade pip cffi && \
     pip3 install --no-cache-dir 'ansible<=2.10.0' && \
     pip3 install --no-cache-dir mitogen ansible-lint jmespath && \
-    pip3 install --no-cache-dir --upgrade pywinrm pyVmomi ovh requests && \
+    pip3 install --no-cache-dir --upgrade pywinrm ara pyVmomi ovh requests && \
     apk del build-dependencies && \
     pip3 cache purge && \
     rm -rf /var/cache/apk/*
